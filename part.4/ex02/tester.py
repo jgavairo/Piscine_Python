@@ -1,9 +1,10 @@
-from DiamondTrap import King
-Joffrey = King("Joffrey")
-print(Joffrey.__dict__)
-Joffrey.set_eyes("blue")
-Joffrey.set_hairs("light")
-print(Joffrey.get_eyes())
-print(Joffrey.get_hairs())
-print(Joffrey.__dict__)
-Joffrey.eyes = "brown"
+from callLimit import callLimit
+@callLimit(3)
+def f():
+    print ("f()")
+@callLimit(1)
+def g():
+    print ("g()")
+for i in range(3):
+    f()
+    g()

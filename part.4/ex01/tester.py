@@ -1,17 +1,12 @@
-from S1E7 import Baratheon, Lannister
-Robert = Baratheon("Robert")
-print(Robert.__dict__)
-print(Robert.__str__)
-print(Robert.__repr__)
-print(Robert.is_alive)
-Robert.die()
-print(Robert.is_alive)
-print(Robert.__doc__)
+from in_out import outer
+from in_out import square
+from in_out import pow
+my_counter = outer(3, square)
+print(my_counter())
+print(my_counter())
+print(my_counter())
 print("---")
-Cersei = Lannister("Cersei")
-print(Cersei.__dict__)
-print(Cersei.__str__)
-print(Cersei.is_alive)
-print("---")
-Jaine = Lannister.create_lannister("Jaine", True)
-print(f"Name : {Jaine.first_name, type(Jaine).__name__}, Alive : {Jaine.is_alive}")
+another_counter = outer(1.5, pow)
+print(another_counter())
+print(another_counter())
+print(another_counter())

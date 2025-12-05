@@ -1,4 +1,14 @@
-.env/
-.env
-__pycache__/
+/.env
+/.venv
+/__pycache__
+/data
+/results
+/logs
+/reports
+/docs
+/tests
+/examples
+/tutorials
+/notebooks
+/configs
 *.pdf

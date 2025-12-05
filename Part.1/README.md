@@ -11,7 +11,5 @@ Cette partie couvre la manipulation d'images avec NumPy et PIL, ainsi que des ca
 - **ex04** - `rotate.py` : Rotation d'images
 - **ex05** - `pimp_image.py` : Application de filtres sur les images (niveaux de gris, etc.)
 
-## Prérequis
-
-Voir `requirement.txt` pour les dépendances nécessaires.
+[Back](../readme.md)
 
